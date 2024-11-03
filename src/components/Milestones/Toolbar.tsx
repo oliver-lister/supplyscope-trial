@@ -19,7 +19,7 @@ const Toolbar = () => {
           <BellIcon />
         </Button>
         <Avatar className="w-8 h-8">
-          <AvatarFallback className="bg-violet-500 text-xs text-white font-light px-0">
+          <AvatarFallback className="bg-indigo-600 text-xs text-white font-light px-0">
             PM
           </AvatarFallback>
         </Avatar>

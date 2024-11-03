@@ -12,6 +12,18 @@ import {
 } from "@radix-ui/react-icons";
 import SidebarLink from "./SidebarLink";
 
+const links = [
+  { icon: CubeIcon, href: "/" },
+  { icon: StackIcon, href: "/" },
+  { icon: TokensIcon, href: "/" },
+  { icon: Pencil2Icon, href: "/" },
+  { icon: TableIcon, href: "/" },
+  { icon: FileTextIcon, href: "/" },
+  { icon: GearIcon, href: "/" },
+];
+
+const activeIndex = 1;
+
 const Sidebar = () => {
   return (
     <>
@@ -21,13 +33,14 @@ const Sidebar = () => {
             <CheckboxIcon className="text-white w-8 h-8" />
           </div>
           <div className="mt-6">
-            <SidebarLink active={false} href="/" Icon={CubeIcon} />
-            <SidebarLink active={true} href="/" Icon={StackIcon} />
-            <SidebarLink active={false} href="/" Icon={TokensIcon} />
-            <SidebarLink active={false} href="/" Icon={Pencil2Icon} />
-            <SidebarLink active={false} href="/" Icon={TableIcon} />
-            <SidebarLink active={false} href="/" Icon={FileTextIcon} />
-            <SidebarLink active={false} href="/" Icon={GearIcon} />
+            {links.map(({ href, icon }, index) => (
+              <SidebarLink
+                key={index}
+                href={href}
+                active={index === activeIndex}
+                Icon={icon}
+              />
+            ))}
           </div>
         </div>
         <div className="self-end">
