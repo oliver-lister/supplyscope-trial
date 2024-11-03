@@ -1,4 +1,5 @@
 import "./App.css";
+import Milestones from "./components/Milestones/Milestones";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <>
       <main className="flex justify-start">
         <Sidebar />
-        <div></div>
+        <Milestones />
       </main>
     </>
   );
