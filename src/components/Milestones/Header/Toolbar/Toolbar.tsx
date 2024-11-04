@@ -5,7 +5,7 @@ import { BackpackIcon, ChevronLeftSquareIcon } from "lucide-react";
 
 const Toolbar = () => {
   return (
-    <div className="flex justify-between items-center px-10">
+    <div className="flex justify-between items-center px-10 mt-4">
       <Button variant="secondary">
         <ChevronLeftSquareIcon />
         Back to Workflows

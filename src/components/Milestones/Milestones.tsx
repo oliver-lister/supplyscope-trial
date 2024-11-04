@@ -4,7 +4,7 @@ import Products from "./Products/Products";
 
 const Milestones = () => {
   return (
-    <div className="py-4 w-full">
+    <div className="w-full h-[100vh] overflow-y-hidden">
       <div className="sticky top-0 z-10 bg-white grid gap-2 shadow-md">
         <Header />
         <HeaderRow />
