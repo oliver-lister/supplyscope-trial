@@ -1,5 +1,5 @@
 import "./App.css";
-import Milestones from "./components/Milestones/Milestones/Milestones";
+import Milestones from "./components/Milestones/Milestones";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {

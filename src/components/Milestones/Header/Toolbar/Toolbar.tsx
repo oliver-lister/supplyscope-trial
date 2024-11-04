@@ -1,11 +1,11 @@
 import { BellIcon, ChevronDownIcon } from "@radix-ui/react-icons";
-import { Avatar, AvatarFallback } from "../ui/avatar";
-import { Button } from "../ui/button";
+import { Avatar, AvatarFallback } from "../../../ui/avatar";
+import { Button } from "../../../ui/button";
 import { BackpackIcon, ChevronLeftSquareIcon } from "lucide-react";
 
 const Toolbar = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center px-10">
       <Button variant="secondary">
         <ChevronLeftSquareIcon />
         Back to Workflows
@@ -19,7 +19,7 @@ const Toolbar = () => {
           <BellIcon />
         </Button>
         <Avatar className="w-8 h-8">
-          <AvatarFallback className="bg-indigo-600 text-xs text-white font-light px-0">
+          <AvatarFallback className="bg-blue-600 text-xs text-white font-light px-0">
             PM
           </AvatarFallback>
         </Avatar>

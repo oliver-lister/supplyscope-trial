@@ -7,13 +7,13 @@ type Props = {
   label: string;
 };
 
-const activeClasses = "text-indigo-600 border-b-indigo-600";
+const activeClasses = "text-blue-600 border-b-blue-600";
 const defaultClasses =
   "flex gap-2 items-center border-b-2 text-sm rounded-t-sm px-4 py-2 hover:bg-secondary hover:cursor-pointer";
 
 const ProjectNavLink = ({ Icon, label, href, active }: Props) => {
   const classes = `${defaultClasses} ${
-    active ? activeClasses : "border-b-transparent text-gray-500"
+    active ? activeClasses : "border-b-transparent text-slate-500"
   }`;
   return (
     <a href={href} className={classes}>

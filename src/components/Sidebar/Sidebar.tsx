@@ -27,7 +27,7 @@ const activeIndex = 1;
 const Sidebar = () => {
   return (
     <>
-      <aside className="bg-gray-900 h-screen grid justify-between">
+      <aside className="sticky top-0 left-0 bg-gray-900 h-screen grid justify-between">
         <div>
           <div className="grid justify-center items-center py-4 px-6">
             <CheckboxIcon className="text-white w-8 h-8" />
