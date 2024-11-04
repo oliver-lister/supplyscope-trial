@@ -6,7 +6,7 @@ import CardColWrapper from "../../../ui/CardColWrapper";
 
 const HeaderRow = () => {
   return (
-    <ProductRowWrapper>
+    <ProductRowWrapper id="header-row">
       <AddProduct />
       <div className="grid gap-4 max-w-[1200px]">
         <SectionTitle />

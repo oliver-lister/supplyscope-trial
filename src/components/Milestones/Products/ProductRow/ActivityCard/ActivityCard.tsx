@@ -35,6 +35,7 @@ const ActivityCard: React.FC<Props> = ({ status, badges }) => {
       className="rounded-md px-4 py-2 grid gap-2"
       style={{
         backgroundColor: status === "done" ? bgColor : undefined,
+        border: status === "done" ? `1px solid ${textColor}` : undefined,
       }}
     >
       <div className="flex justify-between">

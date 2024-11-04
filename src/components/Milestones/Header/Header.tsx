@@ -5,7 +5,7 @@ import ActionBar from "./ActionBar/ActionBar";
 
 const Header = () => {
   return (
-    <header className="grid gap-4">
+    <header id="header" className="grid gap-4">
       <Toolbar />
       <div className="grid gap-2 px-10">
         <TitleSection />
